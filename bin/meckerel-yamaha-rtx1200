@@ -1,3 +1,19 @@
 #!/usr/bin/env ruby
 
 require 'meckerel/yamaha/rtx1200'
+
+client = Meckerel::Yamaha::Rtx1200.new(
+  host: ENV['MECKEREL_YAMAHA_RTX1200_HOST'],
+  user: ENV['MECKEREL_YAMAHA_RTX1200_USER'],
+  password: ENV['MECKEREL_YAMAHA_RTX1200_PASSWORD'],
+)
+
+metrics = client.metrics
+
+if metrics.empty?
+  exit 1
+end
+
+metrics.each do |metric|
+  puts metric.join("\t")
+end
