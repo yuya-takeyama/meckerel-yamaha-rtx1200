@@ -22,7 +22,7 @@ module Meckerel
         html = open("http://#{@host}/admin/", open_opts).map {|line| line.force_encoding("Shift_JIS").encode!("UTF-8") }
 
         if html.find {|line| line =~ /^(\d+)℃/ }
-          result << ['custom.router.temperature', $1, epoch_time]
+          result << ['router.temperature', $1, epoch_time]
         end
 
         result
