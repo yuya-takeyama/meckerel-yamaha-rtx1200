@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+
+require 'meckerel/yamaha/rtx1200'
