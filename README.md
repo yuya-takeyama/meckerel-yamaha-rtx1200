@@ -1,24 +1,16 @@
 # Meckerel::Yamaha::Rtx1200
 
-TODO: Write a gem description
+Collects metrics of Yamaha RTX1200 for Mackerel
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'meckerel-yamaha-rtx1200'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install meckerel-yamaha-rtx1200
+Only clone this repository.
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+$ MECKEREL_YAMAHA_RTX1200_HOST=admin_host MECKEREL_YAMAHA_RTX1200_USER=admin_user MECKEREL_YAMAHA_RTX1200_PASSWORD=admin_password ./bin/meckerel-yamaha-rtx1200
+```
 
 ## Contributing
 
