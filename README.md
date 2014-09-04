@@ -12,6 +12,15 @@ Only clone this repository.
 $ MECKEREL_YAMAHA_RTX1200_HOST=admin_host MECKEREL_YAMAHA_RTX1200_USER=admin_user MECKEREL_YAMAHA_RTX1200_PASSWORD=admin_password ./bin/meckerel-yamaha-rtx1200
 ```
 
+### Configure for mackerel-agent
+
+Append this into your `mackerel-agent.conf`.
+
+```
+[plugin.metrics.router]
+command = "MECKEREL_YAMAHA_RTX1200_HOST=admin_host MECKEREL_YAMAHA_RTX1200_USER=admin_user MECKEREL_YAMAHA_RTX1200_PASSWORD=admin_password ruby /path/to/bin/meckerel-yamaha-rtx1200"
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/yuya-takeyama/meckerel-yamaha-rtx1200/fork )
