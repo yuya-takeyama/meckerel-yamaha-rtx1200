@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Meckerel::Yamaha::Rtx1200::VERSION
   spec.authors       = ["Yuya Takeyama"]
   spec.email         = ["sign.of.the.wolf.pentagram@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Command to collect metrics of Yamaha RTX1200 for Mackerel}
+  spec.description   = %q{Command to collect metrics of Yamaha RTX1200 for Mackerel}
+  spec.homepage      = "https://github.com/yuya-takeyama/meckerel-yamaha-rtx1200"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
